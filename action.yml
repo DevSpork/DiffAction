@@ -1,5 +1,5 @@
-name: 'Auto Version'
-description: 'Automatically update the tag to the latest version'
+name: 'Auto Diff'
+description: 'Automatically get changed folders'
 outputs:
   version:
     description: "The new version"
