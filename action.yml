@@ -11,8 +11,8 @@ runs:
       with:
         fetch-depth: 0
     - id: version-generator
-      run: chmod +x ${{ github.action_path }}/autoversion/main.py && ${{ github.action_path }}/autoversion/main.py >> "$GITHUB_OUTPUT"
+      run: chmod +x ${{ github.action_path }}/autodiff/main.py && ${{ github.action_path }}/autodiff/main.py >> "$GITHUB_OUTPUT"
       shell: bash
     - id: version-generator-print
-      run: ${{ github.action_path }}/autoversion/main.py
+      run: ${{ github.action_path }}/autodiff/main.py
       shell: bash
