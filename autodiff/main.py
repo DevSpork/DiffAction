@@ -6,7 +6,7 @@ diff_cmd = subprocess.run(['git', 'diff', '--name-status', 'HEAD', 'HEAD~1'], st
 diff_files = diff_cmd.stdout.decode("utf-8")
 files = diff_files.split("\n")
 files.pop()
-result_tuples = [(s.split('\t')[0], s.split('\t')[1]) for s in files]
+result_tuples = [s.split('\t')[1].split("/")[0] for s in files]
 
 
 print("files=" + json.dumps(result_tuples))
