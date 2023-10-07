@@ -1,9 +1,9 @@
 name: 'Auto Diff'
 description: 'Automatically get changed folders'
 outputs:
-  version:
+  files:
     description: "The new version"
-    value: ${{ steps.version-generator.outputs.version }}
+    value: ${{ steps.version-generator.outputs.files }}
 runs:
   using: "composite"
   steps:
